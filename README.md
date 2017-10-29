@@ -1,7 +1,7 @@
 # Trip-Art-2
 
 - Conserto do Menu Responsivo (menu hambúrguer);
-- Substituir os arquivos novos deste Repositório pelos antigos;
+- Substituir os arquivos antigos pelos novos deste Repositório;
 
 
 #Não excluam de maneira alguma:
