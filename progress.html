@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+   <link  rel="stylesheet" href="css/materialize.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" type="image/png" href="img/iconBar.png">
+    <link href="https://fonts.googleapis.com/cs?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+    <title>TripArt</title>
+</head>
+<body>
+    
+ <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+	 
+ 
+<nav>
+    <div class="nav-wrapper  purple darken-3 col s12 m2">
+         <a href="#" class="brand-logo center" id="logo">TripArt</a>
+         <a href="#" data-activates="menu-mobile" class="button-collapse">
+             <i class="material-icons">menu</i>
+         </a>
+         <ul class="right hide-on-med-and-down">
+             <li><a href="progress.html">PROGRESSO</a></li>
+                <li><a href="help.html">HELP</a></li>
+       </ul>
+         <ul class="side-nav" id="menu-mobile">
+             <li><a href="progress.html">PROGRESSO</a></li>
+                <li><a href="help.html">HELP</a></li>
+         </ul>
+     </div>
+ </nav>
+    <h1 class="center-align flow-text">Coming soon...</h1>
+    <h3 class="center-align flow-text">In development. Please, wait for the next version!</h3>
+    <!-- <div class="center-align" id="levelNumber">{{level}}</div>
+    </div>
+    <div id="progressCircle" class="" style="color:black;"></div>
+    <p class="center-align " id="level" style="color:black;">{{numberOfAreaPinsUnlocked}}/{{numberOfAreaPinsLocked}}</p>
+    <table class="striped">
+    <thead>
+        <tr>
+            <th>Pin Name</th>
+            <th>Adress</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{pinsName}</td>
+            <td>{{pinsAdress}}</td>
+        </tr>
+    </tbody>
+    </table>
+    -->
+	
+<script>
+ $(function(){
+     $(".button-collapse").sideNav();
+ });
+ </script>	
+	
+<script src="js/pin.js"></script>
+<script src="js/user.js"></script>
+<script src="js/progressEngine.js"></script>
+<script src="bower_components/progressbar.js/dist/progressbar.min.js"></script>
+    <script src="js/progressBar.js"></script>
+    <script>
+        let bar = new ProgressBar.Circle(progressCircle, {
+            color: '#aaa',
+            strokeWidth: 4,
+            trailWidth: 1,
+            easing: 'easeInOut',
+            duration: 1400,
+            text: {
+                autoStyleContainer: false
+            },
+            from: { color: '#aaa', width: 1 },
+            to: { color: '#880e4f', width: 4 },
+            step: function (state, circle) {
+                circle.path.setAttribute('stroke', state.color);
+                circle.path.setAttribute('stroke-width', state.width);
+
+                var value = User.percentage();
+                if (value === 0) {
+                    circle.setText('0%');
+                } else {
+                    circle.setText(value + "%");
+                }
+            }
+        });
+        bar.text.style.fontFamily = 'Oxygen', 'Helvetica', 'sans-serif';
+        bar.text.style.fontSize = '2rem';
+        bar.animate((User.percentage() / 100));
+    </script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/materialize/dist/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" type="image/png" href="img/iconBar.png">
+    <link href="https://fonts.googleapis.com/cs?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+    <title>TripArt</title>
+</head>
+
+<body>
+    
+ <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+	 
+<nav>
+    <div class="nav-wrapper  purple darken-3 col s12 m2">
+         <a href="#" class="brand-logo center" id="logo">TripArt</a>
+         <a href="#" data-activates="menu-mobile" class="button-collapse">
+             <i class="material-icons">menu</i>
+         </a>
+         <ul class="right hide-on-med-and-down">
+             <li><a href="progress.html">PROGRESSO</a></li>
+                <li><a href="help.html">HELP</a></li>
+       </ul>
+         <ul class="side-nav" id="menu-mobile">
+             <li><a href="progress.html">PROGRESSO</a></li>
+                <li><a href="help.html">HELP</a></li>
+         </ul>
+     </div>
+ </nav>
+ 
+ <script>
+ $(function(){
+     $(".button-collapse").sideNav();
+ });
+ </script>
+ 
+    <div id="container">
+        <h4 class="center-align flow-text">AJUDA</h4>
+        <h5 style="margin-left:10px;" class="flow-text">Sobre</h5>
+        <p class="flow-text" id="sobre"> Consiste o TripArt em um aplicativo voltado a exploração de pontos urbanos que possuam especiais e descritivas características artísticas.</p>
+        <p class="flow-text" id="sobre"> A fim deste objetivo, desenvolveu-se com o auxilio da API Google Maps um sistema que em um raio de cinco metros identifica estes pontos, chamados 'Pins', lançando um alerta para o aparelho em uso com ignoraveis ou visualizaveis informações sobre o 'Pin'</p>
+        <!-- <p class="flow-text" id="sobre"></p> -->
+        <h5 style="margin-left:10px;" class="flow-text">Uso</h5>
+        <p class="flow-text" id="sobre"> Com o aplicativo aberto em <b>primeiro plano</b>, o usuário deverá percorer, fisicamente, a cidade chegando ao alcançe de no mínimo cindo metros de um pin para, a partir de um alert, visuliza-lo, ou ingora-lo.</p>
+        <p class="flow-text" id="sobre"> Visualizando o Pin, o úsuário progredirá em porcentos de nível, a medida em que cada nível uma região da cidade se tornará disponível para exploração. Ignorado, não adiciona-se nada ao progresso.</p>
+        <img src="img/icon.png" alt="icone" class="center-align" id="icon">
+        <footer>Desenvolvido por Mouses Jr, Caroline Veleda & Davi Ferreira - DBO, 2017</footer>
+    </div>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
